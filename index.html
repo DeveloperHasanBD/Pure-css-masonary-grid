@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main_box_item img {
+            height: auto;
+            max-width: 100%;
+        }
+
+
+        .main_box {
+            column-count: 4;
+            column-gap: 15px;
+            max-width: 1440px;
+            margin: auto;
+            width: 100%;
+        }
+
+        .main_box_item {
+            margin-bottom: 15px;
+        }
+
+        @media(max-width: 800px) {
+            .main_box {
+                column-count: 3;
+            }
+        }
+
+        @media(max-width: 600px) {
+            .main_box {
+                column-count: 2;
+            }
+        }
+
+        @media(max-width: 400px) {
+            .main_box {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_box">
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.232.Kit_Mose_Ambientata_BASSA_1.jpg" alt="">
+        </div>
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.213_217_Neoretro_Ambientata_BASSA.jpg" alt="">
+        </div>
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.124_Bombo_Ambientata_BASSA.jpg" alt="">
+        </div>
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.123.Kit_Bombo_Ambientata_BASSA.jpg" alt="">
+        </div>
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.232.Kit_Mose_Ambientata_BASSA_1.jpg" alt="">
+        </div>
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.213_217_Neoretro_Ambientata_BASSA.jpg" alt="">
+        </div>
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.124_Bombo_Ambientata_BASSA.jpg" alt="">
+        </div>
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.123.Kit_Bombo_Ambientata_BASSA.jpg" alt="">
+        </div>
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.232.Kit_Mose_Ambientata_BASSA_1.jpg" alt="">
+        </div>
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.213_217_Neoretro_Ambientata_BASSA.jpg" alt="">
+        </div>
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.124_Bombo_Ambientata_BASSA.jpg" alt="">
+        </div>
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.123.Kit_Bombo_Ambientata_BASSA.jpg" alt="">
+        </div>
+    </div>
+    <hr>
+    <p class="asasas">Add</p>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+        $(".asasas").on('click', function () {
+            // alert('asasas');
+
+            $(".main_box").append(`
+            <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.123.Kit_Bombo_Ambientata_BASSA.jpg" alt="">
+        </div>
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.232.Kit_Mose_Ambientata_BASSA_1.jpg" alt="">
+        </div>
+        <div class="main_box_item">
+            <img src="https://miloox.it/wp-content/uploads/import/1744.232.Kit_Mose_Ambientata_BASSA_1.jpg" alt="">
+        </div>
+            `);
+        });
+    </script>
+</body>
+
+</html>
